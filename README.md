@@ -55,3 +55,11 @@ to unmount, use:
 ```
 fusermount -u dst
 ```
+
+limitations
+-----------
+
+The implementation is single-threaded.
+
+The destination filesystem is read-only.
+No modifying operations are implemented (move, rename and delete could be helpful).
